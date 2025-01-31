@@ -1,0 +1,273 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(173, 173, 173);
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+header {
+    background: #333;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: top 0.3s; /* Geçiş süresi */
+}
+.social-icons {
+    display: flex;
+    gap: 10px;
+    padding-left: 15px;
+}
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+.profile-search {
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+}
+.profile-search  {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+nav {
+    background: #444;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 45px; /* Menü, başlığın altına 5px daha yukarı alındı */
+    z-index: 999; /* Menü, başlığın altında kalacak */
+    transition: top 0.3s; /* Geçiş süresi */
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+    margin-top: 80px; /* Başlık ve menünün altında boşluk oluşturmak için */
+}
+.news-section {
+    flex: 2;
+    width: 66.66%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+}
+.news-card {
+    background: rgb(71, 71, 71);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+.news-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+.news-card h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+.news-card p {
+    font-size: 14px;
+    color: #666;
+}
+.news-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.sidebar {
+    flex: 1;
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.search-container, .latest-news {
+    background: rgb(71, 71, 71);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.search-box {
+    width: 94%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+.search-box:focus {
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+    width: calc(100% - 20px);
+}
+.latest-news h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.latest-news ul {
+    list-style: none;
+    padding: 0;
+}
+.latest-news ul li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+.latest-news ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+.light-theme-button {
+    position: fixed;
+    bottom: 20px; /* Alt boşluk */
+    right: 20px;  /* Sağ boşluk */
+    padding: 10px 20px;
+    background-color: #333; /* Buton rengi */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.button{    
+    position: fixed;
+    top: 100px; /* Alt boşluk */
+    right: 20px;  /* Sağ boşluk */
+    padding: 10px 20px;
+    background-color: #333; /* Buton rengi */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.button img{
+    width:50px;height: 50px;
+    border-radius: 50%;
+    
+}
+
+
+
+
+.light-theme {
+    background-color: aliceblue; /* Açık arka plan rengi */
+    color: #000000; /* Koyu metin rengi */
+}
+
+.light-theme header {
+    background: rgb(255, 255, 255); /* Açık gri arka plan */
+}
+
+.light-theme nav {
+    background: rgb(255, 255, 255); /* Daha açık gri arka plan */
+}
+
+.light-theme nav a{
+    background: white;
+}
+
+.social-icons .light-theme i{
+    background-color: #fff;
+}
+
+.light-theme h1{
+    background: #fff;
+}
+
+.light-theme .news-card {
+    background: rgb(255, 255, 255); /* Açık gri arka plan */
+}
+
+.light-theme .news-card h2{
+    background: rgb(255, 255, 255); /* Açık gri arka plan */
+}
+.light-theme .news-card img{
+    background: rgb(255, 255, 255); /* Açık gri arka plan */
+}
+.light-theme .news-card p{
+    background: rgb(255, 255, 255); /* Açık gri arka plan */
+}
+.light-theme .news-card a{
+    background: rgb(255, 255, 255); /* Açık gri arka plan */
+    color: #000000;
+}
+.light-theme .search-container, 
+.light-theme .latest-news {
+    background: #ffffff; /* Açık gri arka plan */
+}
+
+.light-theme .search-box {
+    border: 1px solid #ffffff; /* Açık gri kenar */
+}
+
+.light-theme footer {
+    background: #fff; /* Açık gri arka plan */
+    color: #000000; /* Koyu metin rengi */
+}
+
+.light-theme .light-theme-button,
+.light-theme .button {
+    background-color: #494949; /* Koyu buton rengi */
+    
+}
+.light-theme  .latest-news .h3{
+    background: #fff;
+}
+.light-theme  .latest-news .ula{
+    background: #fff;
+    color: #000000;
+}
+.latest-news .light-theme {
+    background: #fff;
+}
+.button .light-theme{    
+    position: fixed;
+    top: 100px; /* Alt boşluk */
+    right: 20px;  /* Sağ boşluk */
+    padding: 10px 20px;
+    background-color: #ffffff; /* Buton rengi */
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.button .light-theme img{
+    width:50px;height: 50px;
+    border-radius: 50%;
+    
+}
