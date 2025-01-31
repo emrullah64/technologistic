@@ -1,9 +1,9 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #636363;
+    background-color: rgb(173, 173, 173);
     margin: 0;
     padding: 0;
-    color: #333;
+    color: #ffffff;
 }
 header {
     background: #333;
@@ -32,7 +32,7 @@ header {
     align-items: center;
     padding-right: 15px;
 }
-.profile-search img {
+.profile-search  {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -44,7 +44,7 @@ nav {
     text-align: center;
     position: fixed;
     width: 100%;
-    top: 70px; /* Menü, başlığın altına 5px daha yukarı alındı */
+    top: 45px; /* Menü, başlığın altına 5px daha yukarı alındı */
     z-index: 999; /* Menü, başlığın altında kalacak */
     transition: top 0.3s; /* Geçiş süresi */
 }
@@ -71,7 +71,7 @@ nav a {
     justify-content: flex-start;
 }
 .news-card {
-    background: white;
+    background: rgb(71, 71, 71);
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -92,7 +92,7 @@ nav a {
 .news-card a {
     display: inline-block;
     margin-top: 10px;
-    color: #007bff;
+    color: #ffffff;
     text-decoration: none;
 }
 .sidebar {
@@ -103,13 +103,13 @@ nav a {
     gap: 15px;
 }
 .search-container, .latest-news {
-    background: white;
+    background: rgb(71, 71, 71);
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 .search-box {
-    width: 100%;
+    width: 94%;
     padding: 10px;
     border: none;
     border-radius: 20px;
@@ -136,7 +136,7 @@ nav a {
 }
 .latest-news ul li a {
     text-decoration: none;
-    color: #007bff;
+    color: #ffffff;
 }
 footer {
     text-align: center;
@@ -144,4 +144,130 @@ footer {
     background: #333;
     color: white;
     margin-top: 20px;
+}
+
+.light-theme-button {
+    position: fixed;
+    bottom: 20px; /* Alt boşluk */
+    right: 20px;  /* Sağ boşluk */
+    padding: 10px 20px;
+    background-color: #333; /* Buton rengi */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.button{    
+    position: fixed;
+    top: 100px; /* Alt boşluk */
+    right: 20px;  /* Sağ boşluk */
+    padding: 10px 20px;
+    background-color: #333; /* Buton rengi */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.button img{
+    width:50px;height: 50px;
+    border-radius: 50%;
+    
+}
+
+
+
+
+.light-theme {
+    background-color: aliceblue; /* Açık arka plan rengi */
+    color: #000000; /* Koyu metin rengi */
+}
+
+.light-theme header {
+    background: rgb(255, 255, 255); /* Açık gri arka plan */
+}
+
+.light-theme nav {
+    background: rgb(255, 255, 255); /* Daha açık gri arka plan */
+}
+
+.light-theme nav a{
+    background: white;
+}
+
+.social-icons .light-theme i{
+    background-color: #fff;
+}
+
+.light-theme h1{
+    background: #fff;
+}
+
+.light-theme .news-card {
+    background: rgb(255, 255, 255); /* Açık gri arka plan */
+}
+
+.light-theme .news-card h2{
+    background: rgb(255, 255, 255); /* Açık gri arka plan */
+}
+.light-theme .news-card img{
+    background: rgb(255, 255, 255); /* Açık gri arka plan */
+}
+.light-theme .news-card p{
+    background: rgb(255, 255, 255); /* Açık gri arka plan */
+}
+.light-theme .news-card a{
+    background: rgb(255, 255, 255); /* Açık gri arka plan */
+    color: #000000;
+}
+.light-theme .search-container, 
+.light-theme .latest-news {
+    background: #ffffff; /* Açık gri arka plan */
+}
+
+.light-theme .search-box {
+    border: 1px solid #ffffff; /* Açık gri kenar */
+}
+
+.light-theme footer {
+    background: #fff; /* Açık gri arka plan */
+    color: #000000; /* Koyu metin rengi */
+}
+
+.light-theme .light-theme-button,
+.light-theme .button {
+    background-color: #494949; /* Koyu buton rengi */
+    
+}
+.light-theme  .latest-news .h3{
+    background: #fff;
+}
+.light-theme  .latest-news .ula{
+    background: #fff;
+    color: #000000;
+}
+.latest-news .light-theme {
+    background: #fff;
+}
+.button .light-theme{    
+    position: fixed;
+    top: 100px; /* Alt boşluk */
+    right: 20px;  /* Sağ boşluk */
+    padding: 10px 20px;
+    background-color: #ffffff; /* Buton rengi */
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.button .light-theme img{
+    width:50px;height: 50px;
+    border-radius: 50%;
+    
 }
